@@ -17,7 +17,13 @@
         $c1->tampar();
         $c1->rabiscar();
 
-        //print_r($c1);
+        print_r($c1);
+        echo "<br>";
+        $c2 = new Caneta;
+        $c2->cor = "Verde";
+        $c2->carga = 50;
+        $c2->tampar();
+        print_r($c2);
     ?>
 </body>
 </html>
