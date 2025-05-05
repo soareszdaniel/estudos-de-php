@@ -7,8 +7,8 @@
 </head>
 <body>
     <form action="" method="post">
-        Informe seu sexo <input type="text" name="sexo" id="sexo" required><br>
-        Informe sual altura <input type="text" name="altura" id="altura" required>
+        Informe seu sexo: <input type="text" name="sexo" id="sexo" required><br>
+        Informe sual altura (em metros): <input type="text" name="altura" id="altura" required>
         <input type="submit" value="Calcular IMC" name="acao">
     </form>
     <?php   
@@ -16,7 +16,9 @@
             $sexo = $_POST['sexo'];
             $altura = $_POST['altura'];
             if($sexo == "masculino"){
-                
+                echo "Seu peso ideal é: " . (62.1 * $altura) - 44.7;
+            }else{
+                echo "Seu peso ideal é: " . (72.2 * $altura) - 58;
             }
         }
     ?>
